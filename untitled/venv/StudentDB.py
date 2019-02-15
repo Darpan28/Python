@@ -31,7 +31,7 @@ class Student:
 
 reply ="yes"
 while reply =="yes":
-    print("Add Student details")
+    print(">>>>>Add Student details<<<<<")
     name = input("Enter the name of student:")
     standard= int(input("Enter the standard:"))
     section = input("Enter the section:")
@@ -41,5 +41,6 @@ while reply =="yes":
     reply = input("Do you want to add more student? ")
     s1 = Student(0,name,standard,section,phone,address,email)
     s1.saveStudentinDB()
-s1.showStudentDetails()
+    s1.showStudentDetails()
+
 
